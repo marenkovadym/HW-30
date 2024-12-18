@@ -1,0 +1,36 @@
+.wraper {
+    height: 500px;
+    width: 500px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.cube {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    animation: 4s infinite moveCube;
+}
+
+@keyframes moveCube {
+    0%, 100% {
+        transform: translate(0, 0);
+        background-color: coral;
+    }
+
+    25% {
+        transform: translate(0, 400px);
+        background-color: royalblue;
+    }
+
+    50% {
+        transform: translate(400px, 400px);
+        background-color: #9b56db;
+    }
+
+    75% {
+        transform: translate(400px, 0);
+        background-color: #d3ee5a;
+    }
+}
